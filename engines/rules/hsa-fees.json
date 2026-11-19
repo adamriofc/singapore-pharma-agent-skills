@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "rulesetId": "hsa-fees-v1",
+  "statutoryBasis": "Health Products Act 2007 (Cap. 122D); Health Products (Therapeutic Products) Regulations 2016; HSA Guidance on Therapeutic Product Registration",
+  "currency": "SGD",
+  "effectiveDate": "2024-04-01",
+  "provenance": "Health Sciences Authority (HSA) Singapore Fee Schedule & Regulatory Guidance; PRISM Portal Statutory Schedules",
+  "auditMetadata": "Repository Maintainer — adamriofc",
+  "screeningFee": 545,
+  "referenceAgencies": [
+    "US_FDA",
+    "EMA",
+    "TGA_AUSTRALIA",
+    "HEALTH_CANADA",
+    "MHRA_UK",
+    "PMDA_JAPAN",
+    "SWISSMEDIC"
+  ],
+  "fees": {
+    "NDA_1": {
+      "name": "New Chemical or Biological Entity (NCE / NBE)",
+      "full_evaluation": 94500,
+      "abridged_evaluation": 59850,
+      "verification_evaluation": 23100
+    },
+    "NDA_2": {
+      "name": "New Indication, Route of Administration, or Dosage Form",
+      "full_evaluation": 65100,
+      "abridged_evaluation": 42000,
+      "verification_evaluation": 16800
+    },
+    "NDA_3": {
+      "name": "New Strength, Formulation Change, or New Combination",
+      "full_evaluation": 39900,
+      "abridged_evaluation": 25200,
+      "verification_evaluation": 10500
+    },
+    "GDA_1": {
+      "name": "Generic Drug Application with Bioequivalence (BE) Study",
+      "abridged_evaluation": 12600,
+      "verification_evaluation": 5250
+    },
+    "GDA_2": {
+      "name": "Generic Drug Application without BE Study",
+      "abridged_evaluation": 7350,
+      "verification_evaluation": 3150
+    },
+    "VARIATION_MAV_1": {
+      "name": "Major Variation 1 (Clinical efficacy/safety changes)",
+      "evaluation": 7350
+    },
+    "VARIATION_MIV_1": {
+      "name": "Minor Variation 1 (Prior Approval)",
+      "evaluation": 2100
+    },
+    "VARIATION_MIV_2": {
+      "name": "Minor Variation 2 (Notification)",
+      "evaluation": 735
+    },
+    "ANNUAL_RETENTION": {
+      "name": "Annual Product Licence Retention Fee",
+      "fee": 525
+    }
+  },
+  "serviceLevelAgreements": {
+    "VERIFICATION": {
+      "maxWorkingDays": 60,
+      "description": "Fast-track verification pathway requiring approval by at least two HSA reference regulatory agencies for identical indications and formulation",
+      "qualifyingCriteria": [
+        "two_reference_agency_approvals",
+        "identical_indication",
+        "identical_dosage_and_formulation",
+        "no_rejection_or_safety_withdrawal"
+      ]
+    },
+    "ABRIDGED": {
+      "maxWorkingDays": 180,
+      "description": "Abridged evaluation pathway requiring approval by at least one HSA reference regulatory agency, or standard generic dossier",
+      "qualifyingCriteria": [
+        "single_reference_agency_approval",
+        "or_gda_with_be_study"
+      ]
+    },
+    "FULL": {
+      "maxWorkingDays": 270,
+      "description": "Full scientific dossier evaluation where the drug has not received reference agency approval",
+      "qualifyingCriteria": [
+        "no_reference_approval_available",
+        "first_in_world_or_emerging_market_submission"
+      ]
+    }
+  },
+  "dossierRequirements": {
+    "ich_ctd_modules": [
+      "Module 1: Administrative Information and Prescribing Information",
+      "Module 2: Common Technical Document Summaries",
+      "Module 3: Quality (Chemical, Pharmaceutical and Biological Documentation)",
+      "Module 4: Nonclinical Study Reports",
+      "Module 5: Clinical Study Reports"
+    ],
+    "actd_parts": [
+      "Part I: Administrative Documents and Product Information",
+      "Part II: Quality Documents",
+      "Part III: Nonclinical Documents",
+      "Part IV: Clinical Documents"
+    ]
+  }
+}

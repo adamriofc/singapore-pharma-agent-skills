@@ -1,0 +1,142 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "rulesetId": "gmp-gdp-requirements-v1",
+  "statutoryBasis": "Health Products Act 2007; Health Products (Therapeutic Products) Regulations 2016; PIC/S Guide to Good Manufacturing Practice for Medicinal Products (PE 009-17); Singapore Standard SS 585:2013",
+  "effectiveDate": "2024-01-01",
+  "provenance": "Health Sciences Authority (HSA) Singapore Auditing & Licensing Division; PIC/S Secretariat; Enterprise Singapore (SS 585)",
+  "auditMetadata": "Repository Maintainer — adamriofc",
+  "cleanroomClasses": {
+    "GRADE_A": {
+      "name": "Grade A (Clean Zone / LAF)",
+      "maxParticles05AtRest": 3520,
+      "maxParticles05InOperation": 3520,
+      "maxParticles50AtRest": 20,
+      "maxParticles50InOperation": 20,
+      "recommendedAirVelocityMps": 0.45,
+      "differentialPressurePa": 15,
+      "microbiologicalAirCfuM3": 1,
+      "glovePrint5FingersCfu": 1
+    },
+    "GRADE_B": {
+      "name": "Grade B (Aseptic Preparation Background)",
+      "maxParticles05AtRest": 3520,
+      "maxParticles05InOperation": 352000,
+      "maxParticles50AtRest": 29,
+      "maxParticles50InOperation": 2900,
+      "differentialPressurePa": 15,
+      "airChangesPerHourMin": 20,
+      "microbiologicalAirCfuM3": 10,
+      "glovePrint5FingersCfu": 5
+    },
+    "GRADE_C": {
+      "name": "Grade C (Less Critical Stage Cleanroom)",
+      "maxParticles05AtRest": 352000,
+      "maxParticles05InOperation": 3520000,
+      "maxParticles50AtRest": 2900,
+      "maxParticles50InOperation": 29000,
+      "differentialPressurePa": 10,
+      "airChangesPerHourMin": 20,
+      "microbiologicalAirCfuM3": 100
+    },
+    "GRADE_D": {
+      "name": "Grade D (General Cleanroom & Component Washing)",
+      "maxParticles05AtRest": 3520000,
+      "maxParticles05InOperation": null,
+      "maxParticles50AtRest": 29000,
+      "maxParticles50InOperation": null,
+      "differentialPressurePa": 10,
+      "airChangesPerHourMin": 20,
+      "microbiologicalAirCfuM3": 200
+    }
+  },
+  "auditChecklists": {
+    "PICS_GMP": [
+      {
+        "id": "GMP-01",
+        "clause": "PE 009-17 Chapter 1",
+        "title": "Pharmaceutical Quality System (PQS) & Management Review",
+        "criticality": "MAJOR",
+        "criteria": "Senior management periodic review, formal CAPA system, and risk-based change control"
+      },
+      {
+        "id": "GMP-02",
+        "clause": "PE 009-17 Chapter 2",
+        "title": "Personnel & Qualified Person (QP) / Responsible Person (RP)",
+        "criticality": "CRITICAL",
+        "criteria": "Qualified Person registered with HSA, certified release authority, and adequate technical training"
+      },
+      {
+        "id": "GMP-03",
+        "clause": "PE 009-17 Chapter 3",
+        "title": "Premises, HVAC & Environmental Differential Pressure",
+        "criticality": "CRITICAL",
+        "criteria": "HVAC qualification, positive differential pressure cascade (min 10-15 Pa), and HEPA filter integrity (DOP/PAO test)"
+      },
+      {
+        "id": "GMP-04",
+        "clause": "PE 009-17 Chapter 4",
+        "title": "Documentation, Batch Records & Data Integrity (ALCOA+)",
+        "criticality": "CRITICAL",
+        "criteria": "Batch manufacturing/packaging record review, contemporaneous audit trails, and 5-year retention past expiry"
+      },
+      {
+        "id": "GMP-05",
+        "clause": "PE 009-17 Chapter 5",
+        "title": "Production & Cross-Contamination Prevention (Health-Based Limits)",
+        "criticality": "CRITICAL",
+        "criteria": "Toxicological assessment (PDE / ADE), dedicated facilities for sensitising materials, and validated cleaning limits"
+      },
+      {
+        "id": "GMP-06",
+        "clause": "PE 009-17 Chapter 6",
+        "title": "Quality Control & Analytical Method Validation (ICH Q2)",
+        "criticality": "MAJOR",
+        "criteria": "CoA verification, reference standard management, stability testing under Zone IVb tropical conditions (30°C/75% RH)"
+      },
+      {
+        "id": "GMP-07",
+        "clause": "PE 009-17 Chapter 8",
+        "title": "Complaints, Product Defects & Mandatory HSA Recall",
+        "criticality": "CRITICAL",
+        "criteria": "SOP for defect triage, mock recall executed annually, and 24-hour statutory notification to HSA for Class 1 defects"
+      }
+    ],
+    "SS585_GDP": [
+      {
+        "id": "GDP-01",
+        "clause": "SS 585:2013 Clause 4",
+        "title": "Quality Management & Cold Chain Integrity SOPs",
+        "criticality": "CRITICAL",
+        "criteria": "Documented quality system, temperature excursion reporting protocol, and qualified secondary packaging validation"
+      },
+      {
+        "id": "GDP-02",
+        "clause": "SS 585:2013 Clause 5",
+        "title": "Responsible Person & Cold Chain Staff Competence",
+        "criticality": "MAJOR",
+        "criteria": "Designated RP with pharmaceutical or biomedical logistics qualifications and GDP training records"
+      },
+      {
+        "id": "GDP-03",
+        "clause": "SS 585:2013 Clause 6",
+        "title": "Warehouse Temperature Mapping & Alarm Systems",
+        "criticality": "CRITICAL",
+        "criteria": "Seasonal 3-dimensional thermal mapping (summer/monsoon), calibrated sensors (±0.5°C), and 24/7 automated SMS alert"
+      },
+      {
+        "id": "GDP-04",
+        "clause": "SS 585:2013 Clause 7",
+        "title": "Refrigerated Transport Validation & Datalogger Placement",
+        "criticality": "CRITICAL",
+        "criteria": "Active refrigerated reefers or qualified passive shippers (PCM), worst-case tarmac transit mapping at Changi Airport"
+      },
+      {
+        "id": "GDP-05",
+        "clause": "SS 585:2013 Clause 9",
+        "title": "Traceability, Anti-Counterfeiting & Tamper Evidence",
+        "criticality": "MAJOR",
+        "criteria": "Batch serialisation verification, sealed tamper-evident containers, and audit log reconciliation across SingHealth/NHG/NUHS deliveries"
+      }
+    ]
+  }
+}

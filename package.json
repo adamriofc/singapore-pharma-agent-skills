@@ -1,0 +1,70 @@
+{
+  "name": "singapore-pharma-agent-skills",
+  "version": "1.0.0",
+  "description": "Production-grade Pharmaceutical, Biomedical, HSA Regulatory Affairs, PIC/S PE 009-17 GMP & SS 585 GDP audits, Tropical Cold Chain MKT, ACE HTA Reimbursement, and HBRA / Health PDPA Clinical Trial extension for Singapore AI agents.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "node tests/units/pharma-engines.test.js && node tests/units/mkt-cold-chain.test.js && node tests/units/extension-manifest.test.js",
+    "test:security": "node tests/security/injection.test.js && node tests/security/adversarial.test.js",
+    "test:integration": "node tests/integration/core-integration.test.js",
+    "test:smoke": "bash scripts/package-smoke-test.sh",
+    "test:sandbox": "bash scripts/sandbox-test.sh",
+    "test:perf": "node scripts/perf-gate.js",
+    "sha256:verify": "bash scripts/sha256sums.sh verify",
+    "validate": "node scripts/validate-extension.js"
+  },
+  "author": "adamriofc",
+  "license": "AGPL-3.0-or-later",
+  "peerDependencies": {
+    "singapore-business-agent-skills": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "singapore-business-agent-skills": {
+      "optional": true
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "extension-manifest.json",
+    "engines",
+    "skills",
+    "README.md",
+    "LICENSE",
+    "SKILL_PROTOCOL.md",
+    "SHA256SUMS.txt"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adamriofc/singapore-pharma-agent-skills.git"
+  },
+  "keywords": [
+    "pharma",
+    "pharmaceutical",
+    "biomedical",
+    "hsa",
+    "health-sciences-authority",
+    "gmp",
+    "pics",
+    "gdp",
+    "ss-585",
+    "cold-chain",
+    "mean-kinetic-temperature",
+    "mkt",
+    "ace-hta",
+    "standard-drug-list",
+    "maf",
+    "pharmacovigilance",
+    "adr",
+    "vcb",
+    "hbra",
+    "pdpa-healthcare",
+    "singapore",
+    "ai-agent",
+    "skills"
+  ]
+}

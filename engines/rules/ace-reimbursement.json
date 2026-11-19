@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "rulesetId": "ace-reimbursement-v1",
+  "statutoryBasis": "Ministry of Health (MOH) Singapore Standard Drug List (SDL) & Medication Assistance Fund (MAF) Framework; Agency for Care Effectiveness (ACE) Methods Guidance; Goods and Services Tax Act (GST 9%)",
+  "effectiveDate": "2024-01-01",
+  "provenance": "MOH Singapore Drug Advisory Committee (DAC); Agency for Care Effectiveness (ACE); Inland Revenue Authority of Singapore (IRAS)",
+  "auditMetadata": "Repository Maintainer — adamriofc",
+  "taxRates": {
+    "gstRate": 0.09,
+    "description": "Standard Singapore GST rate (9%) applicable to pharmaceutical sales, wholesale distribution, and unsubsidised pharmacy charges"
+  },
+  "healthcareClusters": [
+    {
+      "code": "SINGHEALTH",
+      "name": "Singapore Health Services (SGH, KKH, SKH, CGH, NCCS, NHCS, SNEC, SingHealth Polyclinics)"
+    },
+    {
+      "code": "NHG",
+      "name": "National Healthcare Group (TTSH, KTPH, WHC, IMH, NSC, NHG Polyclinics)"
+    },
+    {
+      "code": "NUHS",
+      "name": "National University Health System (NUH, NTFGH, AH, NUP Polyclinics)"
+    }
+  ],
+  "subsidySchemes": {
+    "SDL": {
+      "name": "Standard Drug List",
+      "description": "Primary essential drug formulary listing approved by MOH DAC based on cost-effectiveness assessment by ACE",
+      "standardSubsidyPct": 0.50,
+      "pioneerOrEnhancedSubsidyPct": 0.75,
+      "eligibleSettings": ["subsidised_outpatient", "subsidised_inpatient_b2_c"]
+    },
+    "MAF": {
+      "name": "Medication Assistance Fund",
+      "description": "Targeted financial assistance scheme for high-cost, specialised therapeutics for specific clinical indications recommended by ACE",
+      "standardSubsidyPct": 0.50,
+      "enhancedMeansTestedSubsidyPct": 0.75,
+      "eligibleSettings": ["specialist_outpatient_clinics", "inpatient_means_tested"]
+    },
+    "NON_SUBSIDISED": {
+      "name": "Non-Subsidised / Private Formulary",
+      "description": "Self-funded therapeutics not listed on SDL or MAF; full retail price plus handling markup and GST borne by patient or private insurance",
+      "standardSubsidyPct": 0.0,
+      "eligibleSettings": ["private_patients", "unapproved_indications"]
+    }
+  },
+  "commercialMargins": {
+    "defaultWholesaleDistributorMargin": 0.07,
+    "hospitalHandlingTiers": {
+      "genericStandard": 0.15,
+      "brandedStandard": 0.12,
+      "specialtyHighCostBiologic": 0.08
+    }
+  }
+}

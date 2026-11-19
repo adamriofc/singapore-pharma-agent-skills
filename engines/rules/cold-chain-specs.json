@@ -1,0 +1,65 @@
+{
+  "statutoryFramework": "Singapore Standard SS 585:2013 Code of Practice for Good Distribution Practice; Health Products Act 2007; HSA GDP Guidelines",
+  "standardReferences": [
+    "USP <1079> Good Storage and Shipping Practices",
+    "WHO TRS 961 Annex 9: Temperature and humidity monitoring systems",
+    "Haynes (1971) Arrhenius formulation for Mean Kinetic Temperature",
+    "Singapore Standard SS 585:2013"
+  ],
+  "defaultConstants": {
+    "activationEnergyDeltaH": 83144.0,
+    "gasConstantR": 8.314472,
+    "deltaHOverR": 10000.0,
+    "absoluteZeroOffset": 273.15,
+    "singaporeAmbientMeanCelsius": 30.5,
+    "singaporeAmbientPeakCelsius": 32.0,
+    "singaporeRelativeHumidityPct": 80.0
+  },
+  "storageConditions": {
+    "COLD_CHAIN_2_8": {
+      "name": "Chilled Cold Chain (Vaccines, Monoclonals & Biologics)",
+      "minCelsius": 2.0,
+      "maxCelsius": 8.0,
+      "freezeRiskThresholdCelsius": 0.0,
+      "criticalExcursionUpperCelsius": 15.0,
+      "maxTolerableExcursionHours": 24.0,
+      "description": "Standard pharmaceutical cold chain for vaccines, insulins, mAbs, and thermolabile therapeutics."
+    },
+    "DEEP_FREEZE_MINUS_20": {
+      "name": "Freezer / Deep Freeze (-20°C)",
+      "minCelsius": -25.0,
+      "maxCelsius": -15.0,
+      "freezeRiskThresholdCelsius": null,
+      "criticalExcursionUpperCelsius": -10.0,
+      "maxTolerableExcursionHours": 12.0,
+      "description": "Deep freeze storage for live viral vaccines and temperature-sensitive biological reagents."
+    },
+    "ULTRA_COLD_MINUS_80": {
+      "name": "Ultra-Low Temperature (ULT / -80°C)",
+      "minCelsius": -86.0,
+      "maxCelsius": -60.0,
+      "freezeRiskThresholdCelsius": null,
+      "criticalExcursionUpperCelsius": -50.0,
+      "maxTolerableExcursionHours": 6.0,
+      "description": "Ultra-cold cryogenic or dry-ice storage for mRNA vaccines, gene therapy vectors, and clinical specimens."
+    },
+    "COOL_STORAGE_8_15": {
+      "name": "Cool Storage (8°C to 15°C)",
+      "minCelsius": 8.0,
+      "maxCelsius": 15.0,
+      "freezeRiskThresholdCelsius": 2.0,
+      "criticalExcursionUpperCelsius": 20.0,
+      "maxTolerableExcursionHours": 48.0,
+      "description": "Controlled cool room storage for select ointments, suppositories, and specialty capsules."
+    },
+    "CONTROLLED_ROOM_15_25": {
+      "name": "Controlled Room Temperature (CRT / 15°C to 25°C)",
+      "minCelsius": 15.0,
+      "maxCelsius": 25.0,
+      "freezeRiskThresholdCelsius": 8.0,
+      "criticalExcursionUpperCelsius": 30.0,
+      "maxTolerableExcursionHours": 72.0,
+      "description": "Ambient air-conditioned pharmaceutical warehouse storage in Singapore (preventing exposure to 30.5°C outdoor tropical heat)."
+    }
+  }
+}

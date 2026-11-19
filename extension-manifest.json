@@ -1,0 +1,69 @@
+{
+  "id": "pharma-sg",
+  "name": "Singapore Pharmaceutical & Biomedical Intelligence Extension",
+  "version": "1.0.0",
+  "domain": "pharma",
+  "author": "adamriofc",
+  "license": "AGPL-3.0-or-later",
+  "description": "Production-grade Pharmaceutical, Biomedical, HSA Regulatory Affairs, PIC/S GMP & SS 585 GDP audits, Tropical Mean Kinetic Temperature (MKT) Cold Chain, ACE HTA Reimbursement, and HBRA / Health PDPA Clinical Trial compliance for Singapore enterprises.",
+  "statutoryFrameworks": [
+    "Health Products Act 2007 (Cap. 122D) & Health Products (Therapeutic Products) Regulations 2016",
+    "Medicines Act 1975 (Cap. 176)",
+    "Human Biomedical Research Act 2015 (HBRA)",
+    "Personal Data Protection Act 2012 (PDPA) & Advisory Guidelines for the Healthcare Sector",
+    "PIC/S Guide to Good Manufacturing Practice for Medicinal Products (PE 009-17)",
+    "Singapore Standard SS 585:2013 - Code of Practice for Good Distribution Practice for Medical Devices / SS GDP for Pharmaceuticals",
+    "HSA Guidance on Therapeutic Product Registration in Singapore (NDA / GDA Pathways)",
+    "Agency for Care Effectiveness (ACE) Health Technology Assessment (HTA) Framework (SDL & MAF Schemes)"
+  ],
+  "skills": [
+    {
+      "id": "hsa-therapeutic-registration-navigator",
+      "name": "HSA Therapeutic Product Registration Navigator",
+      "description": "Navigate HSA therapeutic product registration pathways (Verification 60-day, Abridged 180-day, Full 270-day SLA), ACTD/ICH-CTD dossier evaluation, and compute statutory screening & evaluation fees under the Health Products Act.",
+      "path": "skills/hsa-therapeutic-registration-navigator/SKILL.md",
+      "risk_level": "HIGH",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "hsa-gmp-gdp-auditor",
+      "name": "HSA PIC/S GMP & SS 585 GDP Good Practices Auditor",
+      "description": "Audit compliance with Good Manufacturing Practice (PIC/S PE 009-17) and Good Distribution Practice (SS 585:2013) for HSA Manufacturer, Importer, and Wholesaler licensing, cleanroom HVAC qualification, and supply chain integrity.",
+      "path": "skills/hsa-gmp-gdp-auditor/SKILL.md",
+      "risk_level": "CRITICAL",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "mkt-tropical-cold-chain-engine",
+      "name": "Tropical Cold Chain Mean Kinetic Temperature (MKT) Engine",
+      "description": "Audit pharmaceutical cold-chain temperature logs (2°C-8°C, CRT, frozen) against USP <1079> and Haynes (1971) Arrhenius kinetics, assessing ambient Singapore tropical heat excursions (30°C-32°C / 80% RH) and freezing degradation.",
+      "path": "skills/mkt-tropical-cold-chain-engine/SKILL.md",
+      "risk_level": "CRITICAL",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "hsa-adr-pharmacovigilance-vcb",
+      "name": "HSA Adverse Drug Reaction (ADR) & Vigilance Auditor",
+      "description": "Audit adverse drug reactions against WHO-UMC causality categories and calculate HSA Vigilance and Compliance Branch (VCB) 15-calendar-day expedited fatal/life-threatening reporting deadlines.",
+      "path": "skills/hsa-adr-pharmacovigilance-vcb/SKILL.md",
+      "risk_level": "CRITICAL",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "ace-hta-reimbursement-modeler",
+      "name": "ACE HTA & Standard Drug List (SDL/MAF) Reimbursement Modeler",
+      "description": "Model hospital tender pricing, MOH Standard Drug List (SDL) and Medication Assistance Fund (MAF) co-payment subsidies, statutory GST 9% treatment, and distributor margins for public healthcare institutions (SingHealth, NHG, NUHS).",
+      "path": "skills/ace-hta-reimbursement-modeler/SKILL.md",
+      "risk_level": "HIGH",
+      "rule_type": "statutory"
+    },
+    {
+      "id": "clinical-trial-hbra-pdp-compliance",
+      "name": "Clinical Trial HBRA & Health PDPA Privacy Auditor",
+      "description": "Audit clinical trials and human biomedical research against Human Biomedical Research Act (HBRA 2015), HSA Clinical Trial Authorisation (CTA/CTN), and Singapore PDPA health data protection & cross-border transfer requirements.",
+      "path": "skills/clinical-trial-hbra-pdp-compliance/SKILL.md",
+      "risk_level": "CRITICAL",
+      "rule_type": "statutory"
+    }
+  ]
+}
